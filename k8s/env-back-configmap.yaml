@@ -1,0 +1,14 @@
+apiVersion: v1
+data:
+  DB_ENGINE: django.db.backends.postgres
+  DB_HOST: db
+  DB_NAME: postgres
+  DB_PASSWORD: LocalPassword
+  DB_USER: postgres
+  SECRET_KEY: SECRETKEY
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: backend-env-back
+  name: env-back
